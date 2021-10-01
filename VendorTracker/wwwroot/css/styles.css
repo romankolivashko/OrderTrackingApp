@@ -23,4 +23,9 @@ a {
   color: rgb(32, 6, 6);
 }
 
+#bread {
+  margin-left: 90px;
+  width:80px;
+  height: 65px;
+}
 

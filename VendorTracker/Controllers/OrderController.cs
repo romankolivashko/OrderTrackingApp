@@ -21,19 +21,19 @@ namespace VendorTracker.Controllers
       return View();
     }
 
-    // [HttpPost("/orders/delete/{id}")]
-    // public ActionResult DeleteById(int id)
-    // {
-    //   Order.RemoveById(id);
-    //   return RedirectToAction("Index");
-    // }
-    
     [HttpPost("/orders/delete/{id}")]
     public ActionResult DeleteById(int id)
     {
       Order.RemoveById(id);
       return RedirectToAction("Index");
     }
+    
+    // [HttpPost("/orders/delete/{id}")]
+    // public ActionResult DeleteById(int id)
+    // {
+    //   Order.RemoveById(id);
+    //   return RedirectToAction("Index");
+    // }
 
     [HttpGet("/orders/{id}")]
     public ActionResult Show(int id)
