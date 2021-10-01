@@ -6,22 +6,29 @@ using System;
 namespace VendorTracker.Tests
 {
   [TestClass]
-  public class VendorTests : IDisposable
+  public class VendorTests //: IDisposable
   {
-    public void Dispose()
-    {
-      Item.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   Vendor.ClearAll();
+    // }
 
     [TestMethod]
-    public void NameOfTest_WhatItDoes_WhatItReturn()
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
+      Vendor newVendor = new Vendor("test vendor");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+
+   // [TestMethod]
+  //  public void NameOfTest_WhatItDoes_WhatItReturn()
+  //  {
       // Arrange
 
       // Act
 
       // Assert
-    }
+   // }
     
   }
 }

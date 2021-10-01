@@ -2066,7 +2066,10 @@
         },
         "runtime": {
           "bin/placeholder/VendorTracker.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
