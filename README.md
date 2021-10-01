@@ -9,6 +9,9 @@
 * C#
 * .Net
 * MSTest
+* HTML
+* CSS
+* Razor
 
 ## Description
 This is an MVC application that helps backery owner track the vendors that purchase baked goods from him and the orders belonging to those vendors.
@@ -16,7 +19,7 @@ This is an MVC application that helps backery owner track the vendors that purch
 * For example, the bakery might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
 
 
-
+#### Note: this app was styled with CSS only, to provide Windows legacy UI look, no forms were imported from .Net
 
 ## Setup/Installation Requirements
 
