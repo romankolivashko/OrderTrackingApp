@@ -2,13 +2,15 @@
   Layout = "_Layout";
 }
 
-<h2>Order Details: </h2>
 
-<h2>@Model["order"].Description</h2>
 <h3>Vendor: @Model["vendor"].Name</h3>
+@* <h2>@Model["order"].Description</h2> *@
+<h3>Order Details: </h3>
 
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-<a href='/vendors'>View all vendors</a>
+<h4>@Model["order"].Name</h4>
+
+<button><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a></button>
+<button><a href='/vendors'>View all vendors</a></button>
 
 
 @* <form action='/orders/delete/@Model["order"].Id' method="post">
