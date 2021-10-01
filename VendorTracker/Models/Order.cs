@@ -7,7 +7,7 @@ namespace VendorTracker.Models
     // properties, constructors, methods, etc. go here
     private static List<Order> _instances = new List<Order> {};
     public string Name { get; set; }
-    public int Id { get; }
+    public int Id { get; set; }
     public List<Order> Orders { get; set; }
 
     public Order(string orderName)
@@ -32,5 +32,15 @@ namespace VendorTracker.Models
     {
       return _instances[searchId-1];
     }
+
+    public static void RemoveById(int id)
+    {
+      _instances.RemoveAt(id - 1);
+
+      for (int index = 0; index < _instances.Count; index++)
+          {
+            _instances[index].Id = index + 1;
+          }
+    }  
   }
 }
