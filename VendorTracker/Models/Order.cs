@@ -5,5 +5,17 @@ namespace VendorTracker.Models
   public class Order
   {
     // properties, constructors, methods, etc. go here
+    private static List<Order> _instances = new List<Order> {};
+    public string Name { get; set; }
+    public int Id { get; }
+    public List<Order> Orders { get; set; }
+
+    public Order(string orderName)
+    {
+      Name = orderName;
+      _instances.Add(this);
+      Id = _instances.Count;
+      Orders = new List<Order>{};
+    }
   }
 }
