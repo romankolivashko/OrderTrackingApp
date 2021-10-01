@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+<h2>Order Details: </h2>
+
+<h2>@Model["order"].Description</h2>
+<h3>Vendor: @Model["vendor"].Name</h3>
+
+<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
+<a href='/vendors'>View all vendors</a>
+
+
+@* <form action='/orders/delete/@Model["order"].Id' method="post">
+  <button type="submit" name="button">Delete Order</button>
+</form> *@
+
+ @* '/vendors/@Model["vendor"].Id/orders/@order.Id' *@
+ @* '/vendors/@Model["vendor"].Id/orders/@order.Id' *@
