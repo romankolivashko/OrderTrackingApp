@@ -1,5 +1,26 @@
+body {
+  background: url("../img/xp_bg.jpeg") center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .window {
   margin: 32px; 
   width: 450px;
+  /* padding: 20px; */
+}
+
+.content {
   padding: 20px;
 }
+
+h2 h3 {
+  color: fff;
+}
+
+a {
+  color: rgb(32, 6, 6);
+}
+
+
