@@ -1,8 +1,12 @@
 # OrderTrackingApp
 
-#### C# web application to keep an eye on a busy bakery sales, by tracking vendors and their orders
+#### C# web application to keep an eye on a busy bakery sales, by tracking vendors and their orders. Uses Entity Framework and MySql server for data persistency.
 
 #### By Roman Kolivashko
+
+## Quick look
+
+![](./VendorTracker/wwwroot/img/vendor.gif)
 
 ## Technologies Used:
 
