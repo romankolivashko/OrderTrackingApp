@@ -22,11 +22,9 @@ This is an MVC application that helps backery owner track the vendors that purch
 
 * For example, the bakery might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
 
-<html>
 <span style="color:yellow">
  Note: this app was styled with CSS only, to provide Windows legacy UI look, no forms were imported from .Net
 </span>
-</html>
 
 ## Setup/Installation Requirements
 
